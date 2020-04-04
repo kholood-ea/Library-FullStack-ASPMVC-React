@@ -363,4 +363,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+<<<<<<< HEAD
 >>>>>>> 7696110455eebbe990602b516b8abf817c9b3217
+=======
+>>>>>>> 2c3e00492fdcfecbb54547a6ddf3308c8f085365
