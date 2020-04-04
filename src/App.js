@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import{BrowserRouter ,Switch,Route} from 'react-router-dom'
+import "./App.css"
+import {Books} from './comps/Books'
+import { BooksProvider, PersonsProvider, ProcessesProvider  } from "./context";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {NavBar}from './comps/NavBar'
+import { Persons } from './comps/Persons';
+import { BooksBorrowed } from "./comps/BooksBorrowed";
 
 function App() {
+ 
+  
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+    <BooksProvider>
+      <PersonsProvider>
+        <ProcessesProvider>
+      <main>
+        <NavBar/>
+        <Switch>
+          <Route path="/" exact component={Books}/>
+
+          <Route path="/Persons" exact component={Persons}/>
+          <Route path="/BooksBorrowed" exact component={BooksBorrowed}/>
+
+        </Switch>
+      </main>
+      </ProcessesProvider>
+      </PersonsProvider>
+    </BooksProvider>
+    </BrowserRouter>
+  )
+ 
+
 }
 
 export default App;

@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header {
+  padding-top: 0%;
+  margin-top: 0;
+  background-color:darksalmon;
+  min-height: 10vmin;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  justify-content: left;
+  font-size: calc(20px + 3vmin);
   color: white;
 }
+#btnSearch{
+  margin-left: 1mm;
+  margin-top: 1mm;
+}
+#addingBookDiv{
+  margin-left: auto;
 
-.App-link {
-  color: #61dafb;
+  /* direction: rtl; */
+}
+#btnAddBook {
+  /* margin-left: auto; */
+  /* text-align: right; */
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: right;
+
+  direction: rtl; */
+
+    margin-left: 80%;   
+  margin-bottom: 1%;  
+}
+#btnAddBorr{
+  margin-left: 79%;   
+  margin-bottom: 1%;
+}
+#bookAddingForm{
+  /* display: none;
+  margin-left: 25%;
+  margin-right: 40%;
+  margin-bottom: 2%; */
+  /* border: 2px solid black; */
+}
+.bookAddingFormLable,.bookAddingFormTextBox{
+  
+  margin-bottom: 3%;
+   /* margin-top: 4%;
+  margin-right: 4%;
+  margin-left: 3%;
+font-size: 12pt; */
+}
+#bookSumbit{
+  margin-left: 15%;
+  margin-bottom: 2%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#searchText{
+  /* margin-left: 45%; 
+margin-bottom: 2%;
+font-size: 14pt; */
+
+
 }
+#tableBooks{
+  align-items: center;
+  /* margin-left: 3%; */
+  margin-right: 5%;
+}
+
+
+#bookItem{
+  align-items: center;
+  justify-content: center;
+}
+#person
+{
+  align-items: center;
+  justify-content: center;
+}
+.tableData{
+  justify-content: center;
+  align-items: center;
+text-align: center;
+}
+
+#Formik{
+  margin-bottom: 10%;
+
+} 
+
+#bookEditingForm{
+  display:none;
+}
+.errorMsg{
+color: tomato;
+}
+
+.bookSettings
+{
+  
+  text-align: center;
+
+}
+
+.btnSearch{
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.BorrowerAddingFormTextBox{
+  margin-left: 1mm;
+  margin-right: 1mm;
+  padding-left: 2;
+}
+#newBorr{
+display: flex;
+flex-direction: row-reverse;
+margin-bottom: 1%;
+margin-left: auto;
+margin-right: 1%;
+;}
